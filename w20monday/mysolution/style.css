@@ -1,0 +1,9 @@
+
+#notify{
+    background-color: antiquewhite;
+    position: absolute;
+    text-align: center;
+    top: -15vh;
+    transition: linear 3s;
+}
+
