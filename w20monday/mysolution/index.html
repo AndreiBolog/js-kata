@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="notify">
+       <h1>this-site-uses-cookies-to-continue-please-accept-our-terms</h1>
+       <button onClick="closePopup()">Close</button>
+   </div>
+    
+
+
+    <script>
+        let popup = document.querySelector("#notify");
+
+        function showConfirmation(){
+            console.log("function check")
+            popup.style.top = `10vh`;
+        }
+        
+        setTimeout(showConfirmation, 100)
+        
+        function closePopup(){
+            popup.style.top = `-20vh`;
+        }
+    </script>
+</body>
+</html>
